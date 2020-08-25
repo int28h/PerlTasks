@@ -13,7 +13,7 @@ sub solve_equation {
     my ($a_value, $b_value, $c_value) = @_;
     my $d = ($b_value ** 2) - 4 * $a_value * $c_value;
 	
-    if ($d < 0) {
+    if ($a_value == 0 || $d < 0) {
         print "No solution!\n";
     } elsif ($d > 0) {
 		my $x1 = (-$b_value + ($d ** (1/2))) / (2 * $a_value);
